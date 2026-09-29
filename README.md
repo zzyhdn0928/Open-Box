@@ -112,7 +112,7 @@ curl -fsSL https://raw.githubusercontent.com/liandu2024/Open-Box/main/scripts/in
 GitHub 访问不畅时，需要先通过可访问的 raw 镜像获取安装脚本，再让脚本使用镜像下载发布包：
 
 ```sh
-curl -fsSL https://github.amaigg.eu/raw.githubusercontent.com/liandu2024/Open-Box/main/scripts/install.sh | sh -s -- --mirror
+curl -fsSL https://github.amaigg.eu/raw.githubusercontent.com/liandu2024/Open-Box/main/scripts/install.sh | sh -s -- --mirror github.amaigg.eu
 ```
 
 `--mirror` 只控制安装包下载；如果最外层的 `raw.githubusercontent.com` 本身无法访问，直接在原地址后追加 `--mirror` 仍然无法取得脚本。
